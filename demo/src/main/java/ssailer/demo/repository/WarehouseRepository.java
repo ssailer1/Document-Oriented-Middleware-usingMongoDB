@@ -2,11 +2,8 @@ package ssailer.demo.repository;
 
 import ssailer.demo.model.ProductData;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import ssailer.demo.model.WarehouseData;
+
 import java.util.List;
 
-public interface WarehouseRepository extends MongoRepository<ProductData, String> {
-
-    public ProductData findByProductID(String productID);
-    public List<ProductData> findByWarehouseID(String warehouseID);
-
-}
+public interface WarehouseRepository extends MongoRepository<WarehouseData, String> {}
